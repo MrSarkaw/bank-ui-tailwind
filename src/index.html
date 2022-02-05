@@ -1,0 +1,134 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/dist/output.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+     body{
+        background: #09070F;
+        overflow: hidden;
+      }
+
+      body::before{
+          content:'';
+          position: absolute;
+          width: 800px;
+          height: 800px;
+          background-color: #4705FF;
+          right: -200px;
+          top: -200px;
+          border-radius: 50%;
+          filter: blur(40px);
+          opacity: 0.3;
+        }
+     
+        #rotate {
+            transform: rotate3d(-2900,-1280,1700,-40deg);
+            box-shadow: -10px 0px 10px 1px rgba(0, 0, 0, 0.486);
+            animation: move infinite 4s;
+          }
+
+          @keyframes move {
+              50%{
+                  top:40px;
+                  box-shadow:-50px 100px 10px 20px rgba(0, 0, 0, 0.082);
+                
+              }
+          }
+          
+  </style>
+</head>
+<body class="h-screen">
+    <div class="relative w-9/12 mx-auto">
+        <div class="flex items-center justify-between py-5 text-white">
+            <div class="font-bold">
+                <p>SLVR</p>
+            </div>
+            <div class="flex items-center justify-center space-x-8 text-sm font-bold text-white">
+                <a href="">SOLUTION</a>
+                <a href="">PRICING</a>
+                <a href="">FAQ</a>
+                <a href="">CONTACT US</a>
+            </div>
+        </div>
+        <div style="height: 3px;  background-image: linear-gradient(to right,#962EFF, #3106BB);"></div>
+
+        <div class="w-2/12 mt-14">
+            <p class="text-5xl text-white ">A fully mobile banking experience</p>
+        </div>
+        <div class="grid grid-cols-3 gap-20 mt-20">
+            <div class="h-40 p-10 text-white py-7 rounded-xl" style="background-color: #962EFF;">
+                <p class="text-2xl font-bold">Safe with us</p>
+                <p class="mt-2 text-xs">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, reiciendis unde? Minus sed rerum,</p>
+                <p class="mt-5 text-xs">view info <i class="fas fa-arrow-right"></i> </p>
+
+            </div>
+            <div>
+                <div style="background-image: linear-gradient(to bottom,#3006bbee, black);" class="h-40 p-10 -mt-20 text-white py-7 rounded-xl" >
+                    <p class="text-2xl font-bold">How does it work?</p>
+                    <p class="mt-5 text-xs">view info <i class="fas fa-arrow-right"></i> </p>
+                </div>
+                <div style="background-image: linear-gradient(to bottom,#962EFF, #4705FF);" class="h-40 p-10 mt-2 text-white py-7 rounded-xl" style="background-color: #962EFF;">
+                    <p class="text-2xl font-bold">View our pricing details</p>
+                    <p class="mt-5 text-xs">view info <i class="fas fa-arrow-right"></i> </p>
+                </div>
+            </div>
+            <div class="h-48 p-10 text-white py-14 rounded-xl" style="background-color: #962EFF;">
+                <p class="text-2xl font-bold ">Download the SLVR app</p>
+                <i class="px-5 py-2 mt-4 text-blue-500 bg-white fab fa-google-play rounded-xl"></i>
+                <i class="px-5 py-2 mt-4 text-blue-500 bg-white fab fa-play rounded-xl"></i>
+            </div>
+        </div>
+        <div style="width: 210px;z-index: 9999;"  class="absolute right-0 p-2 px-2 py-5 bg-black top-20 w-60 rounded-3xl h-96 " id="rotate">
+         
+                <div class="p-3 text-white border border-blue-500 rounded-xl">
+                    <p class="text-xs font-bold" style="font-size: 9px;">BANK</p>
+                    <p class="mt-3 text-xs font-bold" >**** **** **** 0000</p>
+                    <p class="my-0 text-xs"  style="font-size: 9px;">01/02</p>
+    
+                    <div class="flex items-center justify-between mt-5 font-bold">
+                        <p>$7,982.4</p>
+                        <i class="text-blue-500 fas fa-money-check-alt"></i>
+                    </div>
+                </div>
+                <div class="p-2 mt-2 rounded-xl bg-opacity-10" style="background-image: linear-gradient(to bottom,#3006bbee, black);">
+                    <div class="w-11/12 mx-auto">
+                        <div class="flex items-center justify-between h-10 p-1 text-white bg-black rounded-xl">
+                            <p class="px-2 text-xs">test</p>
+                            <div class="w-8 h-full bg-purple-500 rounded-full"></div>
+                        </div>
+                        <div class="flex items-center justify-between mt-2 text-white">
+                            <p class="text-sm font-bold">Transactions</p>
+                            <p class="text-xs text-gray-400">ALL</p>
+                        </div>
+                        <div class="mt-2 ">
+                            <p style="font-size: 8px;" class="text-gray-400">TODAY</p>
+                            <div class="flex items-center justify-between">
+                                <div class="flex flex-wrap items-center justify-center space-x-3">
+                                    <img class="mt-1 rounded-full" src="https://cdn.vox-cdn.com/thumbor/AwKSiDyDnwy_qoVdLPyoRPUPo00=/39x0:3111x2048/1400x1400/filters:focal(39x0:3111x2048):format(png)/cdn.vox-cdn.com/uploads/chorus_image/image/49901753/netflixlogo.0.0.png" width="30px" height="30px" alt="">
+                                    <div class="mt-2">
+                                        <p class="text-sm font-bold text-white">Netflix</p>
+                                        <p style="font-size: 8px;" class="text-gray-400">Bussinss </p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <p class="text-sm font-bold text-white">-$9.99</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="absolute w-8/12 mx-auto mt-2 ml-8 bottom-5">
+                    <div class="flex items-center justify-between text-white">
+                        <i class="fas fa-box"></i>
+                        <i class="fas fa-signal"></i>
+                        <i class="fas fa-user"></i>
+                        <i class="fas fa-plus"></i>
+                    </div>
+                </div>
+        </div>
+    </div>
+</body>
+</html>
